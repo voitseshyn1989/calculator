@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <script src="calc.js"></script>
+</head>
+<body>
+   <h1>Калькулятор</h1>
+   	<form id="form1" name="form1" method="post" action="">
+  		<table width="400" border="1" align="center" cellpadding="5" cellspacing="0">
+    		<tr>
+      			<td>число 1</td>
+      			<td><input type="text" name="num1" id="num1" /></td>
+    		</tr>
+   			<tr>
+      			<td>число 2</td>
+      			<td><input type="text" name="num2" id="num2" /></td>
+    		</tr>
+    		<tr>
+      			<td>действие</td>
+      			<td>
+      				<select name="act" id="act">
+	      				<option value="1">+</option>
+				        <option value="2">-</option>
+				        <option value="3">*</option>
+				        <option value="4">/</option>				     
+      				</select>
+      			</td>
+    		</tr>
+    		<tr>
+      			<td>результат</td>
+      			<td><input type="text" name="result" id="result" /></td>
+    		</tr>
+    		<tr>
+    			<td colspan="2"><input type="button" name="button" id="button" onclick="calc()" value="=" /></td>
+    		</tr>
+  		</table>
+	</form>
+</body>
+</html>
